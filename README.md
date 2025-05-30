@@ -60,20 +60,21 @@ Fluxos Alternativos:
    - O jogo exibe "GAME OVER!" e encerra.
   
 3. Subir de Nível (Incluído em "Participar de Combate")
-Ator Principal: Sistema
+ - Ator Principal: Sistema
+ - Objetivo: Aprimorar os atributos do Herói quando ele acumula XP suficiente.
 
-Objetivo: Aprimorar os atributos do Herói quando ele acumula XP suficiente.
+ - Para ser possível subir de nível:
+  - O Herói tem que estar vivo.
+  - O Herói tem que ganhar XP.
 
-Pré-condições:
-
-O Herói está vivo.
-O Herói ganhou XP.
 Fluxo Principal:
 
-O sistema verifica se o XP atual do Herói é maior ou igual ao XP necessário para o próximo nível.
-Se sim: a. O sistema incrementa o nível do Herói. b. O sistema subtrai o XP necessário do XP atual do Herói. c. O sistema calcula o novo XP necessário para o próximo nível (aumenta progressivamente). d. O sistema aumenta os atributos do Herói (HP máximo, força, defesa). e. O sistema cura totalmente o HP do Herói. f. O sistema exibe uma mensagem de "Subiu de Nível" com os novos atributos. g. O sistema verifica novamente se o XP restante é suficiente para outro nível (para subir múltiplos níveis de uma vez).
-Se não: Nenhuma ação é tomada.
-Pós-condições:
-
-Os atributos do Herói podem ter sido aprimorados.
-O XP necessário para o próximo nível pode ter sido recalculado.
+ - O sistema verifica se o XP atual do Herói é maior ou igual ao XP necessário para o próximo nível.
+ - Se sim:
+  - O sistema incrementa o nível do Herói. Tendo feito isso, subtrai o XP necessário do XP atual do herói.
+  - O sistema calcula o novo XP necessário para o próximo nível.
+  - O sistema aumenta os atributos do Herói (HP máximo, força, defesa) e cura totalmente o HP do herói.
+  - O sistema exibe uma mensagem de "Subiu de Nível" com os novos atributos.
+  - O sistema verifica mais uma vez se o XP restante é suficiente para outro nível.
+ - Se não:
+  - Nada é feito.
