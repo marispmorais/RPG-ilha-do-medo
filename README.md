@@ -26,20 +26,25 @@ Fluxos Alternativos:
 2. Combates
  - Ator Principal: Jogador, Sistema(controlando o Inimigo)
  - Objetivo: Simular um confronto por turnos entre o Herói e um Inimigo até que um dos dois seja derrotado.
-
- - Pré-condições:
-
-  - Um Herói e um Inimigo estão definidos e ativos.
-  - Ambos estão vivos.
+ - Para ocorrer um combate, o herói e o inimigo precisam estar definidos e vivos.
     
-Fluxo Principal (Turno a Turno):
+Fluxo Principal(Turno a Turno):
+ - O sistema inicia o combate e exibe a situação inicial (HP do Herói e do Inimigo).
+ - Vez do Herói:
+    - O sistema exibe as opções de ação do Herói (Atacar, Usar Habilidade).
+    - Atacar:
+      - O sistema calcula e aplica o dano do Herói no Inimigo, exibindo o resultado do ataque.
+    - Usar Habilidade:
+      - O sistema lista as habilidades disponíveis do Herói.
+      - O jogador escolhe uma habilidade pelo índice.
+      - O sistema executa a habilidade (aplicando dano ao Inimigo, curando o Herói, aplicando escudo, etc.) e exibe o resultado da ação.
+ - O sistema verifica se o Inimigo foi derrotado. Se sim, o combate termina (Fluxo Alternativo 2).
+ - Vez do Inimigo:
+    - O sistema escolhe a ação do Inimigo (Atacar ou Usar Habilidade).
+    - O sistema executa a ação do Inimigo (aplicando dano ao Herói ou usando uma habilidade) e exibe o resultado da ação.
+ - O sistema verifica se o Herói foi derrotado. Se sim, o combate termina (Fluxo Alternativo 3).
+ - O combate continua para o próximo turno (passo 2 reinicia).
 
-O sistema inicia o combate e exibe a situação inicial (HP do Herói e Inimigo).
-Turno do Herói: a. O sistema exibe as opções de ação do Herói (Atacar, Usar Habilidade). b. O jogador escolhe uma ação. c. Se "Atacar": i. O sistema calcula e aplica o dano do Herói no Inimigo. ii. O sistema exibe o resultado do ataque. d. Se "Usar Habilidade": i. O sistema lista as habilidades disponíveis do Herói. ii. O jogador escolhe uma habilidade pelo índice. iii.O sistema executa a habilidade (aplicando dano ao Inimigo, curando o Herói, aplicando escudo, etc.). iv. O sistema exibe o resultado da habilidade.
-O sistema verifica se o Inimigo foi derrotado. Se sim, o combate termina (Fluxo Alternativo A2).
-Turno do Inimigo: a. O sistema decide a ação do Inimigo (Atacar ou Usar Habilidade), baseando-se em sua IA simples. b. O sistema executa a ação do Inimigo (aplicando dano ao Herói ou usando uma habilidade). c. O sistema exibe o resultado da ação do Inimigo.
-O sistema verifica se o Herói foi derrotado. Se sim, o combate termina (Fluxo Alternativo A3).
-O combate continua para o próximo turno (volta ao passo 2).
 Pós-condições:
 
 Um dos combatentes (Herói ou Inimigo) tem 0 HP ou menos.
