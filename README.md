@@ -45,26 +45,21 @@ Fluxo Principal(Turno a Turno):
  - O sistema verifica se o Herói foi derrotado. Se sim, o combate termina (Fluxo Alternativo 3).
  - O combate continua para o próximo turno (passo 2 reinicia).
 
-Pós-condições:
-
-Um dos combatentes (Herói ou Inimigo) tem 0 HP ou menos.
 Fluxos Alternativos:
 
-A1: Escolha de Ação Inválida do Herói:
-No passo 2b, o jogador insere uma escolha inválida.
-O sistema informa que a escolha é inválida e o Herói perde o turno.
-O fluxo principal continua no passo 3.
-A2: Inimigo Derrotado:
-No passo 3, o Inimigo tem 0 HP.
-O sistema informa que o Inimigo foi derrotado.
-O Herói ganha experiência (XP).
-O sistema verifica se o Herói subiu de nível (Fluxo de Inclusão UC.3).
-O combate termina e o jogo avança para o próximo inimigo ou encerra.
-A3: Herói Derrotado:
-No passo 5, o Herói tem 0 HP.
-O sistema informa que o Herói foi derrotado.
-O jogo exibe "GAME OVER!" e encerra.
-3. Caso de Uso: Subir de Nível (Incluído em "Participar de Combate")
+ - 1: Escolha de Ação Inválida do Herói:
+   - Na hora de escolher entre atacar ou usar habilidade, caso o jogador insira uma escolha inválida o sistema informará e o Herói perderá o turno.
+   - O fluxo principal continua após isso.
+ - 2: Inimigo Derrotado:
+   - Quando o inimigo tiver 0 HP, O sistema informará que o Inimigo foi derrotado.
+   - O Herói ganha experiência (XP).
+   - O sistema verifica se o Herói subiu de nível (Fluxo de Inclusão 3).
+   - O combate termina e o jogo avança para o próximo inimigo ou encerra.
+ - 3: Herói Derrotado:
+   - Quando o herói tiver 0 HP, O sistema informará que o herói foi derrotado.
+   - O jogo exibe "GAME OVER!" e encerra.
+  
+3. Subir de Nível (Incluído em "Participar de Combate")
 Ator Principal: Sistema
 
 Objetivo: Aprimorar os atributos do Herói quando ele acumula XP suficiente.
