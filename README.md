@@ -71,10 +71,10 @@ Fluxo Principal:
 
  - O sistema verifica se o XP atual do Herói é maior ou igual ao XP necessário para o próximo nível.
  - Se sim:
-  - O sistema incrementa o nível do Herói. Tendo feito isso, subtrai o XP necessário do XP atual do herói.
-  - O sistema calcula o novo XP necessário para o próximo nível.
-  - O sistema aumenta os atributos do Herói (HP máximo, força, defesa) e cura totalmente o HP do herói.
-  - O sistema exibe uma mensagem de "Subiu de Nível" com os novos atributos.
-  - O sistema verifica mais uma vez se o XP restante é suficiente para outro nível.
+   - O sistema incrementa o nível do Herói. Tendo feito isso, subtrai o XP necessário do XP atual do herói.
+   - O sistema calcula o novo XP necessário para o próximo nível.
+   - O sistema aumenta os atributos do Herói (HP máximo, força, defesa) e cura totalmente o HP do herói.
+   - O sistema exibe uma mensagem de "Subiu de Nível" com os novos atributos.
+   - O sistema verifica mais uma vez se o XP restante é suficiente para outro nível.
  - Se não:
-  - Nada é feito.
+   - Nada é feito.
