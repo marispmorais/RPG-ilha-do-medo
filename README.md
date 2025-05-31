@@ -80,4 +80,5 @@ Fluxo Principal:
    - Nada é feito.
 
 ## Diagrama de Classes  
-![Diagrama de Classes](diagramadeclasse.png)
+![Diagrama de Classes](diagramadecl![diagramadeclasse](https://github.com/user-attachments/assets/5dc5c34f-6a61-4af1-b79e-0d4504ef5750)
+asse.png)
