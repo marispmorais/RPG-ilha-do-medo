@@ -80,7 +80,7 @@ Fluxo Principal:
    - Nada é feito.
 
 ## Diagrama de Classes  
-![diagrama](https://github.com/user-attachments/assets/dbd159e4-bda5-40ba-a8ab-5c4231c02912)
+![diagrama](https://github.com/user-attachments/assets/dfe2bd9a-aecb-44ec-89fa-445eda6f7452)
 
 ## Rodando o jogo  
  - abrir pasta package no terminal e executar:
