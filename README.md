@@ -78,3 +78,6 @@ Fluxo Principal:
    - O sistema verifica mais uma vez se o XP restante é suficiente para outro nível.
  - Se não:
    - Nada é feito.
+
+## Diagrama de Classes  
+![Diagrama de Classes](diagramadeclasse.png)
