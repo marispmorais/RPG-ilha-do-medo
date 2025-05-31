@@ -82,9 +82,8 @@ Fluxo Principal:
 ## Diagrama de Classes  
 ![diagrama](https://github.com/user-attachments/assets/dbd159e4-bda5-40ba-a8ab-5c4231c02912)
 
-## Como Executar  
+## Rodando o jogo  
  - abrir pasta package no terminal e executar:
 
 ```bash
 python main.py
-
